@@ -1,11 +1,11 @@
 import React from 'react'
 import {Container, Section, Button} from 'react-bulma-components'
 
-const Addbutton = () =>(
+const Addbutton = ({onClick}) =>(
     <Section>
         <Container>
             <div className = "is-pulled-right">
-                <Button color = "primary">Add</Button>
+                <Button color = "primary" onClick={onClick}>Add</Button>
             </div>
         </Container>
     </Section>
